@@ -1,0 +1,275 @@
+
+.wrap{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+li img{
+    width: 100%;
+}
+
+.kiva-bg-img img{
+    width: 100%;
+}
+.day-list{
+    position: absolute;
+    top: 26%;
+    left: 0%;
+    padding: 0 12%;
+    z-index: 10;
+}
+
+.day-list li{
+    float: left;
+    width: 20%;
+    position: relative;
+    padding-bottom: 1%;
+}
+
+.day-list li img{
+    max-width: 100%;
+}
+
+.close{
+    position: absolute;
+    right: 6%;
+    top: 6%;
+    z-index: 99;
+    width: 6%;
+    height: auto;
+}
+
+.close img{
+    width: 100%;
+}
+
+.chapter {
+    width: 17%;
+    position: relative;
+    display: inline-block;
+    width: 14%;
+    height: auto;
+    border-radius: 50%;    
+}
+
+.book-Nlist{
+    text-align: right;
+}
+
+.book-Nlist{
+    position: absolute;
+    left: 9.5%;
+    top: 17%;
+    width: 17%;
+    height: auto;
+    z-index: 100;
+    text-align: right;
+}
+
+.book-Nlist ul:after{
+    clear:both; content:""; display:block;
+}
+
+.book-Nlist li{
+    margin-top: 14%;
+    float: right;
+    width: 70%;
+    font-size: 0;
+} 
+
+.book-Nlist li a {
+    position: relative;
+    width: 20%;
+    margin-left: 1%;
+}
+
+.book-Nlist li a img{
+   max-width: 100%;
+}
+
+.book-Nlist li:nth-child(1){
+    margin-top: 2%;
+}
+
+.book-Nlist li:nth-child(2){
+   margin-top: 21%;
+}
+
+.book-Nlist li:nth-child(3){
+    margin-top: 28%;
+}
+
+.book-Nlist li:nth-child(4){
+    margin-top: 21%;
+}
+
+.book-Nlist li:nth-child(5){
+    margin-top: 24%;
+}
+
+.book-Nlist li:nth-child(6){
+    margin-top: 23%;
+}
+
+
+ul.week {
+    position: absolute;
+    right: 8%;
+    width: 60%;
+    z-index: 9999;
+}
+
+ul.week:after{
+    clear:both; content:""; display:block;
+}
+ul.week li{
+    position: relative;
+    float: left;
+    width: 15%;
+    margin-right: 2%;
+    z-index: 9999;
+}
+
+ul.week li:last-child{
+    margin-right: 0;
+}
+
+
+ul.week li img{
+    max-width: 100%;
+    z-index: 9999;
+    vertical-align: middle;
+}
+
+ul.week li a img{
+    margin-top: 3%;
+}
+
+ul.week1{
+    top: 24%;
+}
+ul.week2{
+    top: 37.5%;
+}
+ul.week3{
+    top: 51%;
+}
+ul.week4{
+    top: 65%
+}
+
+.book-h1{
+    position: absolute;
+    z-index: 99;
+    top: 6%;
+    right: 26.7%;
+}
+
+.book-Nlist li.kiva-Bnumli {
+    margin-top: 24%;
+   
+}
+
+.book-Nlist li.kiva-Cnumli{
+    margin-top: 27%;
+}
+
+
+.balloon {
+    animation: motion 0.7s linear 0s infinite alternate;
+    margin-top: 0;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    width: 9%;
+    z-index: 2;
+}
+
+.balloon img{
+    width: 100%;
+}
+
+
+.cloud,
+.cloud2{
+    position: absolute;
+    width: 100%;
+}
+
+.cloud{
+    top: 5%;
+}
+
+.cloud2{
+    top: 15%;
+}
+
+.cloud img{
+    animation: motion2 12s linear 0s infinite ;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.cloud2 img{
+    animation: motion3 15s linear 0s infinite ;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+@keyframes motion2 {
+	0% {left: -30%;}
+	100% {left: 150%;}
+}
+
+@keyframes motion3 {
+	0% {left: -30%;}
+	100% {left: 110%;}
+}
+
+.day-list{
+    z-index: 10;
+}
+
+
+.book-h1{
+    width: 6%;
+}
+
+.book-h1 img{
+    width: 100%;
+}
+
+.cloud img{
+    width: 20%;
+}
+
+.cloud2 img{
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

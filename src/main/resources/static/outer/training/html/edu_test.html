@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Referrer" content="origin">
+<meta name="description" content="kiva learning test">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+<title>Kiva - test</title>
+<link rel="stylesheet" href="../css/swiper.min.css">
+<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<div id="wrap">
+  <div class="test_wrap"><!-- //prefix : test_wrap : 시험 -->
+    <div class="inner">
+      <div class="top_box">
+        <a href="javascript:;" class="btn_home"><img src="../img/btn_home.png"></a>
+        <p class="attemp_count">1차 시도</p>
+        <dl>
+          <dt>errors:</dt><dd><strong>0</strong></dd>
+        </dl>
+        <p class="cnt">(<span class="current_p">1</span>/16)</p>
+      </div>
+
+      <!-- 문제지 -->
+      <div id="swp_test" class="test_templete swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="question_tit">What's the beginning letter?</p>
+            <div class="box01">
+              <img src="../img/test/test_img01.jpg" alt="" />
+              <img src="../img/test/test_img02.jpg" alt="" />
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="1">Ww</a>
+              <a href="javascript:;" data-code="0">Xx</a>
+              <a href="javascript:;" data-code="0">Yy</a>
+              <a href="javascript:;" data-code="0">Zz</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Choose the correct answer.</p>
+            <div class="box01">
+              <img src="../img/test/test_img03.jpg" alt="" />
+              <img src="../img/test/test_img04.jpg" alt="" />
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="0">Ww</a>
+              <a href="javascript:;" data-code="1">Xx</a>
+              <a href="javascript:;" data-code="0">Yy</a>
+              <a href="javascript:;" data-code="0">Zz</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">What's the beginning letter?</p>
+            <div class="box01">
+              <img src="../img/test/test_img05.jpg" alt="" />
+              <img src="../img/test/test_img06.jpg" alt="" />
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="0">Ww</a>
+              <a href="javascript:;" data-code="0">Xx</a>
+              <a href="javascript:;" data-code="1">Yy</a>
+              <a href="javascript:;" data-code="0">Zz</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">What's the beginning letter?</p>
+            <div class="box01">
+              <img src="../img/test/test_img07.jpg" alt="" />
+              <img src="../img/test/test_img08.jpg" alt="" />
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="0">Ww</a>
+              <a href="javascript:;" data-code="0">Xx</a>
+              <a href="javascript:;" data-code="0">Yy</a>
+              <a href="javascript:;" data-code="1">Zz</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Find the correct word.</p>
+            <div class="box01 wide">
+              <img src="../img/test/test_img09.jpg" alt="" />
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="0">west</a>
+              <a href="javascript:;" data-code="1">worm</a>
+              <a href="javascript:;" data-code="0">window</a>
+              <a href="javascript:;" data-code="0">water</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Find the correct picture.</p>
+            <div class="box01 text">
+              <p>yogurt</p>
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img10.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img05.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="1"><img src="../img/test/test_img11.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img06.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Complete the sentence.</p>
+            <div class="box01 sentence">
+              <img src="../img/test/test_img12.jpg" alt="" />
+              <ul>
+                <li>The water</li>
+                <li>goes to</li>
+                <li>?</li>
+              </ul>
+            </div>
+            <div class="answer_list sentence">
+              <a href="javascript:;" data-code="1">the west.</a>
+              <a href="javascript:;" data-code="0">on the window.</a>
+              <a href="javascript:;" data-code="0">in the box.</a>
+              <a href="javascript:;" data-code="0">in the big zero.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Complete the sentence.</p>
+            <div class="box01 sentence">
+              <img src="../img/test/test_img13.jpg" alt="" />
+              <ul>
+                <li>The Yo-yo</li>
+                <li>is</li>
+                <li>?</li>
+              </ul>
+            </div>
+            <div class="answer_list sentence">
+              <a href="javascript:;" data-code="0">red.</a>
+              <a href="javascript:;" data-code="1">yellow.</a>
+              <a href="javascript:;" data-code="0">pink.</a>
+              <a href="javascript:;" data-code="0">black.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Complete the sentence.</p>
+            <div class="box01 sentence">
+              <img src="../img/test/test_img14.jpg" alt="" />
+              <ul>
+                <li>The fox</li>
+                <li>is</li>
+                <li>?</li>
+              </ul>
+            </div>
+            <div class="answer_list sentence">
+              <a href="javascript:;" data-code="0">in the big zero.</a>
+              <a href="javascript:;" data-code="0">on the window.</a>
+              <a href="javascript:;" data-code="0">to the west.</a>
+              <a href="javascript:;" data-code="1">in the box.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Complete the sentence.</p>
+            <div class="box01 sentence">
+              <img src="../img/test/test_img15.jpg" alt="" />
+              <ul>
+                <li>The zebra</li>
+                <li>is</li>
+                <li>?</li>
+              </ul>
+            </div>
+            <div class="answer_list sentence">
+              <a href="javascript:;" data-code="1">in the big zero.</a>
+              <a href="javascript:;" data-code="0">in the box.</a>
+              <a href="javascript:;" data-code="0">on the window.</a>
+              <a href="javascript:;" data-code="0">to the west.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Choose the correct answer.</p>
+            <div class="box01 question">
+              <ul>
+                <li>
+                  <img src="../img/test/test_img_big01.jpg" alt="" />
+                  <p>What do you need in winter?</p>
+                </li>
+                <li>
+                  <img src="../img/test/test_img_big02.jpg" alt="" />
+                  <P>?</p>
+                </li>
+              </ul>
+            </div>
+            <div class="answer_list answer">
+              <a href="javascript:;" data-code="0">I'm wearing a hanbok.</a>
+              <a href="javascript:;" data-code="0">It's snowy.</a>
+              <a href="javascript:;" data-code="0">On my hands.</a>
+              <a href="javascript:;" data-code="1">I need gloves.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Choose the correct answer.</p>
+            <div class="box01 question">
+              <ul>
+                <li>
+                  <img src="../img/test/test_img_big03.jpg" alt="" />
+                  <p>Where do you put them?</p>
+                </li>
+                <li>
+                  <img src="../img/test/test_img_big04.jpg" alt="" />
+                  <P>?</p>
+                </li>
+              </ul>
+            </div>
+            <div class="answer_list answer">
+              <a href="javascript:;" data-code="0">On my feet.</a>
+              <a href="javascript:;" data-code="1">On my hands.</a>
+              <a href="javascript:;" data-code="0">On my head.</a>
+              <a href="javascript:;" data-code="0">On my body.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Choose the correct answer</p>
+            <div class="box01 question">
+              <ul>
+                <li>
+                  <img src="../img/test/test_img_big05.jpg" alt="" />
+                  <p>What do you need in winter?</p>
+                </li>
+                <li>
+                  <img src="../img/test/test_img_big06.jpg" alt="" />
+                  <P>?</p>
+                </li>
+              </ul>
+            </div>
+            <div class="answer_list answer">
+              <a href="javascript:;" data-code="0">I need gloves.</a>
+              <a href="javascript:;" data-code="0">I need hat.</a>
+              <a href="javascript:;" data-code="1">I need boots.</a>
+              <a href="javascript:;" data-code="0">I need coat.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Choose the correct answer.</p>
+            <div class="box01 question">
+              <ul>
+                <li>
+                  <img src="../img/test/test_img_big07.jpg" alt="" />
+                  <p>Where do you put them?</p>
+                </li>
+                <li>
+                  <img src="../img/test/test_img_big08.jpg" alt="" />
+                  <P>?</p>
+                </li>
+              </ul>
+            </div>
+            <div class="answer_list answer">
+              <a href="javascript:;" data-code="0">On my body.</a>
+              <a href="javascript:;" data-code="0">On my hands.</a>
+              <a href="javascript:;" data-code="1">On my feet.</a>
+              <a href="javascript:;" data-code="0">On my head.</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Find the correct picture.</p>
+            <div class="box01 text">
+              <P>I need a hat.</p>
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img_big06.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img_big02.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="1"><img src="../img/test/test_img_big09.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img_big10.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="question_tit">Find the correct picture.</p>
+            <div class="box01 text">
+              <P>I need a coat.</p>
+            </div>
+            <div class="answer_list">
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img_big06.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img_big02.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="0"><img src="../img/test/test_img_big09.jpg" alt="" /></a>
+              <a href="javascript:;" data-code="1"><img src="../img/test/test_img_big10.jpg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //문제지 -->
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<!--this is a paid version script-->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/Draggable.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript">
+//사용자함수 - 스와이퍼 다음으로 넘기기
+function slideToNext(swp){
+  var swiper = swp;
+  if(swiper.isEnd){
+    alert("테스트 결과 페이지로 이동 or 결과노출");
+  }else{
+    swiper.slideNext();
+  }
+}
+
+//객체 - 전체 스와이퍼
+var swpTest = new Swiper("#swp_test",{
+  allowTouchMove : false,
+  speed:800
+});
+swpTest.on("slideChange",function(){
+  $(".cnt .current_p").html(swpTest.realIndex+1);
+});
+
+//이벤트 - 정답선택
+//20210216 추가 수정 - s
+var errorCnt = 0;
+$(document).on("click",".test_wrap .test_templete .answer_list > a",function(){
+  var code = $(this).data("code");
+  switch(code){
+    case 1:
+      $(this).addClass("active");
+    break;
+    case 0:
+      errorCnt++;
+      $(".test_wrap .inner .top_box dl dd strong").html(errorCnt);
+    break;
+  }
+  slideToNext(swpTest);
+});
+//20210216 추가 수정 - e
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/animate.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+    <title>메타에듀</title>
+</head>
+<body>
+
+    <div class="wrap">
+
+      <header>
+        <a href="index.html" class="logo"><img src="../images/logo.png"></a>
+        <nav class='header-nav'>
+            <ul class="ul1">
+              <li class='active'>
+                <a href='menu1-1.html'>
+                  메타에듀소개
+                </a>
+              </li>
+              <li>
+                <a href='menu2-1.html'>
+                  프로그램
+                </a>
+              </li>
+              <li>
+                <a href='menu3-1.html'>
+                  MTS-어학기
+                </a>
+              </li>
+              <li >
+                <a href='notice.html'>
+                  공지사항
+                </a>
+              </li>
+              <li class="none">
+                <a href='menu5.html'>
+                  게시판
+                </a>
+              </li>
+              <li class="none">
+                <a href='study_room.html' class="or-a">
+                  학습관
+                </a>
+              </li>
+              <li  class="none">
+                <a href='branch.html'  class="or-a">
+                  지사용
+                </a>
+              </li>
+              <li  class="none">
+                <a href='teacher.html'  class="or-a">
+                  강사용
+                </a>
+              </li>
+             
+            </ul>
+          </nav>
+         
+          <div class="login-box">
+            <div class="">
+              <a href="login.html" class="login">로그인</a>
+              <a href="join.html" class="join">회원가입</a>
+            </div>
+            <diV class="loi-aft none">
+              <p><span>박모건</span> 회원님 환영합니다. <img src="../images/login_06.png"></p>
+              <div class="sub-box none">
+                <ul>
+                  <li><a href="">관리자</a></li>
+                  <li><a href="">로그아웃</a></li>
+                </ul>
+              </div>
+            </diV>
+          </div>
+          <p class="call-txt"><img src="../images/call-hed_03.png">1577-3047</p>
+    </header>
+        
+        <div class="login-pg">
+            <div class="inner-box">
+                <p class="login-img"><img src="../images/logintxt_03.png"></p>
+                <input type="text" class="input1" placeholder="아이디">
+                <input type="password" class="input1" placeholder="비밀번호">
+                <button type="submit" class="login-btn"  onclick="location.href='index2.html'">로그인</button>
+                <div class="idpw-box">
+                  <a href="id.html">아이디 찾기</a> / <a href="pw.html">비밀번호 찾기</a>
+                </div>
+                <hr class="hr">
+                <p class="fff"><span>아직 회원이 아니신가요?</span>
+                    <a href="join.html" class="join-a">회원가입</a></p>
+            </div>
+        </div>
+
+        <footer>
+          <div class="wid1480">
+            <p><img src="../images/logo.png"></p>
+            <ul>
+              <li>
+                <p>법인명(상호) : (주)메타에듀 / 대표자(성명) : 주재현 / 개인정보관리책임자 : (주)메타에듀</p>
+                <p>주소 : 39253 경상북도 구미시 구미대로 350-27 (신평동) 모바일융합 기술센터 316호</p>
+                <p>전화 : 1577-3047 / 팩스 : 054-642-5664  /  Email : meta-edu@naver.com</p>
+                <p>사업자 등록번호 : 625-86-00370  / 통신판매업 신고 : 제 2021-경북구미-0186 호</p>
+                <p>COPYRIGHT ⓒ 메타에듀. ALL RIGHTS RESERVED.</p>
+              </li>
+              <li>
+                <p class="call">1577-3047</p>
+                <p>
+                  <a href="" class="gry-a">ESPT</a>
+                  <a href="" class="gry-a">PPL스쿨</a>
+                </p>
+                 <a href="" class="foo-alist">회사소개</a>
+                 <a href="" class="foo-alist">이용약관</a>
+                 <a href="" class="foo-alist">개인정보취급방침</a>
+                 <a href="" class="foo-alist">이용안내</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+    
+</body>
+
+    <script  src="../js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".header-nav .ul1>li").hover(function() { 
+              $(this).children(".ul2").slideToggle("fast"); 
+            });
+
+            $(".login-box .loi-aft p").click(function() { 
+              $(this).next(".sub-box").slideToggle(""); 
+            });
+        });
+        </script>
+
+
+</html>

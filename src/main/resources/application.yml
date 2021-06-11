@@ -1,0 +1,97 @@
+sentry:
+  dsn: https://73eca1cd0bf745fea1083fecff11d2dd@o514302.ingest.sentry.io/5617401
+
+spring:
+  # 레디스 환경
+  redis:
+    host: localhost
+    port: 6379
+  session:
+    timeout: 36000
+    store-type: redis
+    redis:
+      flush-mode: on_save
+      namespace: spring:session
+  profiles:
+    active: local # 기본적으로 local이 선택된다는 뜻
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+#  freemarker:
+#    cache: false # 실서버 반영시에는 반드시 빼줘야한다.. ###########중요!!! 개발시 편하게 하려고 LiveReloading 설정
+#  devtools:
+#    livereload:
+#      enabled: true
+
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:sqlserver://110.93.134.210:1433;databaseName=MetaEdu # DB명 치환
+    username: "sa" # DB아이디 치환
+    password: "!madmin0" # DB비번 치환
+
+  jpa:
+    open-in-view: true # 스프링 2.0 부터 적용 // default가 true 값이다 //  Layzy 전략과 관계 있고,  false로 설정시 영속성 컨택스트가 service 단에서 종료된다. 쉽게.. Controller에서 영속성 컨택스를 살릴래?ture 죽일래?false
+    hibernate:
+      ddl-auto: none #  create update none : 처음 데이터베이스를 생성할때만 create로 하고  update로 바꿔줘야한다.
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mappings: false # autoincrement 전략을 데이터 베이스 기준으로 따라간다
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        use_sql_comments: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+
+
+koreaSoft:
+  key: MxeL!UGZBx9eSPb
+
+custom:
+  uploadFileDirPath: D:/Data/FileUpload/IamFreelancer #파일업로드 경로
+  loginPath: /auth/user/login
+
+---
+spring:
+  profiles: local
+server:
+  port: 8085
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    jsp:
+      init-parameters:
+        development: true # 배포시 false
+
+---
+# 운영환경만의 설정
+spring:
+  profiles: production
+server:
+  port: 30500
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    jsp:
+      init-parameters:
+        development: false
+---

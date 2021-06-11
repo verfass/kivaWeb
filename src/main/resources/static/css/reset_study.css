@@ -1,0 +1,77 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing:border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    -webkit-text-size-adjust: none
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+em,address{ 
+    font-style:normal 
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+a, a:hover, a:active, a:focus  {
+    text-decoration: none; 
+}
+
+input, textarea{ -webkit-border-radius: 0; -webkit-appearance: none; }
+
+
+
+
+button,input,select,textarea {border:0 none;border-radius:0; background-color:transparent; vertical-align:middle; cursor:pointer; outline:none;}
+img {vertical-align:top}
+input[type=button],input[type=email],input[type=password],input[type=reset], input[type=search],input[type=submit],input[type=tel],input[type=text] {border-radius:0;-webkit-appearance:none;}
+a {color:#333; text-decoration:none}
+a:active, a:hover{text-decoration:none}
+caption,legend {font-size:0;line-height:0;visibility:hidden}
+input:focus,select:focus,textarea:focus { outline-width:thin; outline:none; }
+input::-ms-clear { display:none }
+input::-webkit-contacts-auto-fill-button {display:none !important;position:absolute;right:0 ; visibility:hidden;pointer-events:none;}
+body {background-color:#fff;-webkit-text-size-adjust:none }
+body,button,input,pre,select,table,textarea {color:#000;font-family:'Noto Sans KR', sans-serif; font-size:16px;}
+
+select::-ms-expand {display:none}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ }
+select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }

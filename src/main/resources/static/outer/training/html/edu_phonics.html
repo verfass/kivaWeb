@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="Referrer" content="origin">
+  <meta name="description" content="kiva learning test">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+  <title>Learning - Phonics</title>
+  <link rel="stylesheet" href="http://www.internetenglish.co.kr/bookstudy/kivastudent/drag/css/style-p5.css">
+  <link rel="stylesheet" href="http://www.internetenglish.co.kr/bookstudy/kivastudent/drag/css/divpopup.css">
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<div id="wrap">
+  <div class="content_wrap">
+    <div class="inner">
+      <div class="ui_box">
+        <a href="javascript:;" class="btn_home"><img src="../img/btn_home.png" alt="" /></a>
+      </div>
+      <!-- content wrapper -->
+      <div id="swp_perview01" class="edu_templete swiper-container" style="background-image:url(../img/bg01.jpg);">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-bgsrc="bg01.jpg" >
+            <div class="inner">
+              <div class="img_box wide">
+                <img src="../img/word_img01.png" alt="Aa" />
+              </div>
+              <a id="startSound" href="javascript:;" class="btn_sound" onclick="make_sound('../sound/alphabets/AA.mp3');"><img src="../img/speaker.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgsrc="bg03.jpg" data-bgm="../sound/Lets find the letter big A.mp3">
+            <div class="inner">
+              <div class="quiz_wrap" data-game="drag">
+                <div class="box_answer next_move" data-code="1" data-sound="../sound/alphabets/a.mp3"><img src="../img/txt_aa.png" alt="A" /></div>
+                <div class="box_exam">
+                  <div class="list_frog" id="test--1">
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/d.mp3" href="javascript:;">d</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="1" class="dragItem" data-sound="../sound/alphabets/a.mp3" href="javascript:;">a</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--region 문제유형1 (이미지), (소리) -->
+          <div class="swiper-slide" data-bgsrc="bg01.jpg" data-bgm="../sound/Lets find the letter big A.mp3" >
+            <div class="inner">
+              <div class="img_box wide">
+                <img src="../img/word_img01.png" alt="Aa" />
+              </div>
+              <a href="javascript:;" class="btn_sound" onclick="make_sound('../sound/alphabets/AA.mp3');"><img src="../img/speaker.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-bgsrc="bg01.jpg">
+            <div class="inner">
+              <div class="img_box">
+                <img data-anigif="../img/word_img02.gif" data-gifsound="../sound/one two three.mp3" src="../img/word_img02.png" alt="A" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-bgsrc="bg01.jpg">
+            <div class="inner">
+              <div class="img_box"><img data-anigif="../img/word_img03.gif" data-gifsound="../sound/one two three.mp3" src="../img/word_img03.png" alt="a" /></div>
+            </div>
+          </div>
+
+          <!--endregion-->
+          <!--region 문제유형2 (이미지) -->
+          <div class="swiper-slide" data-bgsrc="bg02.jpg">
+            <div class="inner">
+              <div class="img_box wide"><img src="../img/word_img04.png" alt="a" /></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner">
+              <div class="img_box"><img src="../img/word_img05.png" alt="a" /></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner">
+              <div class="img_box wide"><img src="../img/word_img06.png" alt="a" /></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner">
+              <div class="img_box"><img src="../img/word_img07.png" alt="a" /></div>
+            </div>
+          </div>
+          <!--endregion-->
+          <!--region 문제유형3 악어 = > 대문자 => 소문자-->
+
+          <div class="swiper-slide stop_slide" data-bgsrc="bg03.jpg">
+            <div class="inner">
+              <div class="quiz_wrap" data-game="drag">
+                <div class="box_answer next_move" data-code="1" data-sound="../sound/alphabets/a.mp3"><img src="../img/txt_aa.png" alt="A" /></div>
+                <div class="box_exam">
+                  <div class="list_frog">
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/d.mp3" href="javascript:;">D</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">B</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">C</a></div>
+                    <div class="item"><a data-code="1" class="dragItem" data-sound="../sound/alphabets/a.mp3" href="javascript:;">A</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">C</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">B</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgsrc="bg03.jpg">
+            <div class="inner">
+              <div class="quiz_wrap" data-game="drag">
+                <div class="box_answer" data-code="1" data-sound="../sound/alphabets/a.mp3"><img src="../img/txt_aa.png" alt="A" /></div>
+                <div class="box_exam">
+                  <div class="list_frog">
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/d.mp3" href="javascript:;">D</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">B</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">B</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">C</a></div>
+                    <div class="item"><a data-code="1" class="dragItem" data-sound="../sound/alphabets/a.mp3" href="javascript:;">A</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">C</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--endregion-->
+          <!--region 문제유형3 (이미지) * 3  -->
+          <div class="swiper-slide stop_slide" data-bgsrc="bg03.jpg" data-bgm="../sound/Lets find the letter small a.mp3">
+            <div class="inner">
+              <div class="quiz_wrap" data-game="drag">
+                <div class="box_answer next_move" data-code="1" data-sound="../sound/alphabets/a.mp3"><img src="../img/txt_a.png" alt="a" /></div>
+                <div class="box_exam">
+                  <div class="list_frog" >
+                    <div class="item"><a data-code="1" class="dragItem" data-sound="../sound/alphabets/a.mp3" href="javascript:;">a</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/d.mp3" href="javascript:;">d</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgsrc="bg03.jpg">
+            <div class="inner">
+              <div class="quiz_wrap" data-game="drag">
+                <div class="box_answer next_move" data-code="1" data-sound="../sound/alphabets/a.mp3"><img src="../img/txt_a.png" alt="a" /></div>
+                <div class="box_exam">
+                  <div class="list_frog">
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/d.mp3" href="javascript:;">d</a></div>
+                    <div class="item"><a data-code="1" class="dragItem" data-sound="../sound/alphabets/a.mp3" href="javascript:;">a</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgsrc="bg03.jpg">
+            <div class="inner">
+              <div class="quiz_wrap" data-game="drag">
+                <div class="box_answer" data-code="1" data-sound="../sound/alphabets/a.mp3"><img src="../img/txt_a.png" alt="a" /></div>
+                <div class="box_exam">
+                  <div class="list_frog">
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/d.mp3" href="javascript:;">d</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/b.mp3" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" class="dragItem" data-sound="../sound/alphabets/c.mp3" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="1" class="dragItem" data-sound="../sound/alphabets/a.mp3" href="javascript:;">a</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--endregion-->
+
+          <div class="swiper-slide" data-bgsrc="bg01.jpg" data-bgm="../sound/alphabets/AA.mp3">
+            <div class="inner">
+              <div class="img_box wide">
+                <img src="../img/word_img01.png" alt="Aa" />
+              </div>
+              <a href="javascript:;" class="btn_sound" onclick="make_sound('../sound/alphabet/AA.mp3');"><img src="../img/speaker.png" alt="" /></a>
+            </div>
+          </div>
+
+          <!--region 문제유형4 사과 오답6 정답6-->
+          <div class="swiper-slide stop_slide" data-bgsrc="bg04.jpg"  data-bgm="../sound/Lets Find the big and small a.mp3">
+            <div class="inner">
+              <div class="quiz_wrap type_tree" data-game="select_tree">
+                <div class="box_answer" data-code="1" data-sound="../sound/alphabets/AA.mp3">
+                  <img src="../img/txt_aa.png" alt="A" />
+                  <img src="../img/txt_a.png" alt="a" />
+                </div>
+                <div class="box_exam">
+                  <div class="list_tree">
+                    <div class="item"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item"><a data-code="0" data-sound="../sound/alphabets/d.mp3" class="selectItem" href="javascript:;">D</a></div>
+                    <div class="item"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">C</a></div>
+                    <div class="item"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">b</a></div>
+                    <div class="item"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">B</a></div>
+                    <div class="item"><a data-code="0" data-sound="../sound/alphabets/d.mp3" class="selectItem" href="javascript:;">d</a></div>
+                    <div class="item"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--endregion-->
+
+          <!--region 문제유형5 날으는 풍선-->
+          <div class="swiper-slide stop_slide" data-bgsrc="bg05.jpg" data-bgm="../sound/Lets find the letter a.mp3">
+            <div class="inner">
+              <div class="quiz_wrap type_balloon" data-game="select">
+                <div class="box_exam">
+                  <div class="list_balloon">
+                    <div class="item ball_navy"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">B</a></div>
+                    <div class="item ball_red"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item ball_navy"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">b</a></div>
+                    <div class="item ball_blue"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item ball_pink"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item ball_green"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item ball_yellow"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item ball_yellow"><a data-code="0" data-sound="../sound/alphabets/d.mp3" class="selectItem" href="javascript:;">d</a></div>
+                    <div class="item ball_green"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item ball_green"><a data-code="0" data-sound="../sound/alphabets/d.mp3" class="selectItem" href="javascript:;">D</a></div>
+                    <div class="item ball_orange"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item ball_pink"><a data-code="0" data-sound="../sound/alphabets/d.mp3" class="selectItem" href="javascript:;">d</a></div>
+                    <div class="item ball_orange"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">b</a></div>
+                  </div>
+                  <div class="balloon_card">
+                    <div class="card" data-sound="../sound/apple.mp3" data-repeat="2">
+                      <img src="../img/img_a_apple.png" alt="" />
+                      <p><strong>a</strong>pple</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--endregion-->
+
+          <!--region 문제유형6 상자 풍선-->
+          <div class="swiper-slide stop_slide" data-bgsrc="bg06.jpg" data-bgm="../sound/Lets find the beginning letter a.mp3">
+            <div class="inner">
+              <div class="quiz_wrap type_balloon02" data-game="select02">
+                <div class="box_exam">
+                  <div class="list_balloon">
+                    <div class="item ball_navy"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">b</a></div>
+                    <div class="item ball_red"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item ball_yellow"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">B</a></div>
+                    <div class="item ball_green"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item ball_blue"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item ball_purple"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item ball_red"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">C</a></div>
+                    <div class="item ball_orange"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <img class="bg" src="../img/balloon_box.png" alt="" />
+                  </div>
+                  <div class="balloon_card">
+                    <div class="card" data-sound="../sound/apple.mp3" data-repeat="2">
+                      <img src="../img/img_a_apple.png" alt="" />
+                      <p><strong>a</strong>pple</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--endregion-->
+
+
+          <div class="swiper-slide stop_slide" data-bgsrc="bg07.jpg">
+            <div class="inner">
+              <div class="quiz_wrap type_candy" data-game="select02">
+                <div class="box_exam">
+                  <div class="list_balloon">
+                    <div class="item candy_beige"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">b</a></div>
+                    <div class="item candy_purple"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item candy_mint"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item candy_pink"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item candy_green"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">C</a></div>
+                    <div class="item candy_yellow"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">B</a></div>
+                    <div class="item candy_red"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item candy_blue"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <img class="bg" src="../img/candy_box.png" alt="" />
+                    <img class="bg02" src="../img/candy_box02.png" alt="" />
+                  </div>
+                  <div class="balloon_card">
+                    <div class="card" data-sound="../sound/airplane.mp3" data-repeat="2">
+                      <img src="../img/img_a_airplane.png" alt="" />
+                      <p><strong>a</strong>irplane</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgsrc="bg06.jpg">
+            <div class="inner">
+              <div class="quiz_wrap type_balloon02" data-game="select02">
+                <div class="box_exam">
+                  <div class="list_balloon">
+                    <div class="item ball_red"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item ball_navy"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">b</a></div>
+                    <div class="item ball_purple"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item ball_yellow"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">B</a></div>
+                    <div class="item ball_blue"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item ball_orange"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item ball_red"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">C</a></div>
+                    <div class="item ball_green"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <img class="bg" src="../img/balloon_box.png" alt="" />
+                  </div>
+                  <div class="balloon_card">
+                    <div class="card" data-sound="../sound/arrow.mp3" data-repeat="2">
+                      <img src="../img/img_a_arrow.png" alt="" />
+                      <p><strong>a</strong>rrow</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgsrc="bg07.jpg">
+            <div class="inner">
+              <div class="quiz_wrap type_candy" data-game="select02">
+                <div class="box_exam">
+                  <div class="list_balloon">
+                    <div class="item candy_purple"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item candy_beige"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">b</a></div>
+                    <div class="item candy_yellow"><a data-code="0" data-sound="../sound/alphabets/b.mp3" class="selectItem" href="javascript:;">B</a></div>
+                    <div class="item candy_pink"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">c</a></div>
+                    <div class="item candy_mint"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">a</a></div>
+                    <div class="item candy_red"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item candy_blue"><a data-code="1" data-sound="../sound/alphabets/a.mp3" class="selectItem" href="javascript:;">A</a></div>
+                    <div class="item candy_green"><a data-code="0" data-sound="../sound/alphabets/c.mp3" class="selectItem" href="javascript:;">C</a></div>
+                    <img class="bg" src="../img/candy_box.png" alt="" />
+                    <img class="bg02" src="../img/candy_box02.png" alt="" />
+                  </div>
+                  <div class="balloon_card">
+                    <div class="card" data-sound="../sound/alligator.mp3" data-repeat="2">
+                      <img src="../img/img_a_alligator.png" alt="" />
+                      <p><strong>a</strong>lligator</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-bgsrc="bg01.jpg" data-bgm="../sound/the alligator has an apple.mp3">
+            <div class="inner">
+              <div class="img_box sentence_img"><img src="../img/sentence_a01.png" alt="" /></div>
+              <p class="txt_box02">The alligator has an apple.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide stop_slide" data-bgsrc="bg08.jpg" data-bgm="../sound/make the sentence with pictures.mp3">
+            <div class="inner">
+              <div class="quiz_wrap type_blank" data-game="drag02">
+                <div class="tbl_cell">
+                  <div class="box_answer" data-sound="../sound/the alligator has an apple.mp3">
+                    <div class="answer" data-code="1" onclick="make_sound('../sound/the alligator.mp3');"><img class="num" src="../img/number_circle01.png" alt="1" /></div>
+                    <div class="answer" data-code="2" onclick="make_sound('../sound/has.mp3');"><img class="num" src="../img/number_circle02.png" alt="2" /></div>
+                    <div class="answer" data-code="3" onclick="make_sound('../sound/an apple.mp3');"><img class="num" src="../img/number_circle03.png" alt="3" /></div>
+                  </div>
+                  <div class="box_exam">
+                    <div class="list_pic">
+                      <div class="item"><a data-code="1" data-sound="../sound/악어가.mp3" class="dragItem" href="javascript:;"><img src="../img/type04_img01.png" alt="" /></a></div>
+                      <div class="item"><a data-code="3" data-sound="../sound/사과를.mp3" class="dragItem" href="javascript:;"><img src="../img/type04_img02.png" alt="" /></a></div>
+                      <div class="item"><a data-code="2" data-sound="../sound/가지고있어요.mp3" class="dragItem" href="javascript:;"><img src="../img/type04_img03.png" alt="" /></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgm="../sound/make the sentence with words.mp3">
+            <div class="inner">
+              <div class="quiz_wrap type_blank" data-game="drag02">
+                <div class="tbl_cell">
+                  <div class="box_answer" data-sound="../sound/the alligator has an apple.mp3">
+                    <div class="answer" data-code="1" onclick="make_sound('../sound/the alligator.mp3');"><p>The alligator</p></div>
+                    <div class="answer" data-code="2" onclick="make_sound('../sound/has.mp3');"><p>has</p></div>
+                    <div class="answer" data-code="3" onclick="make_sound('../sound/an apple.mp3');"><p>an apple</p></div>
+                  </div>
+                  <div class="box_exam">
+                    <div class="list_pic">
+                      <div class="item"><a data-code="2" data-sound="../sound/가지고있어요.mp3"  class="dragItem" href="javascript:;"><img src="../img/type04_img03.png" alt="" /></a></div>
+                      <div class="item"><a data-code="3" data-sound="../sound/사과를.mp3"  class="dragItem" href="javascript:;"><img src="../img/type04_img02.png" alt="" /></a></div>
+                      <div class="item"><a data-code="1" data-sound="../sound/악어가.mp3"  class="dragItem" href="javascript:;"><img src="../img/type04_img01.png" alt="" /></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide" data-bgm="../sound/make the sentence with pictures.mp3">
+            <div class="inner">
+              <div class="quiz_wrap type_blank" data-game="drag02">
+                <div class="tbl_cell">
+                  <div class="box_answer bg_white" data-sound="../sound/the alligator has an apple.mp3">
+                    <div class="answer" data-code="1" onclick="make_sound('../sound/the alligator.mp3');"><img class="num" src="../img/number_circle01.png" alt="1" /></div>
+                    <div class="answer" data-code="2" onclick="make_sound('../sound/has.mp3');"><img class="num" src="../img/number_circle02.png" alt="2" /></div>
+                    <div class="answer" data-code="3" onclick="make_sound('../sound/an apple.mp3');"><img class="num" src="../img/number_circle03.png" alt="3" /></div>
+                  </div>
+                  <div class="box_exam">
+                    <div class="list_pic txt">
+                      <div class="item"><a data-code="3" data-sound="../sound/an apple.mp3" class="dragItem" href="javascript:;"><span>an apple</span></a></div>
+                      <div class="item"><a data-code="1" data-sound="../sound/the alligator.mp3" class="dragItem" href="javascript:;"><span>The alligator</span></a></div>
+                      <div class="item"><a data-code="2" data-sound="../sound/has.mp3" class="dragItem" href="javascript:;"><span>has</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide stop_slide">
+            <div class="inner">
+              <div class="quiz_wrap type_blank" data-game="drag02">
+                <div class="tbl_cell">
+                  <div class="box_answer bg_white" data-sound="../sound/the alligator has an apple.mp3">
+                    <div class="answer" data-code="1" onclick="make_sound('../sound/악어가.mp3');"><img src="../img/type04_img01.png" alt="" /></div>
+                    <div class="answer" data-code="2" onclick="make_sound('../sound/가지고있어요.mp3');"><img src="../img/type04_img03.png" alt="" /></div>
+                    <div class="answer" data-code="3" onclick="make_sound('../sound/사과를.mp3');"><img src="../img/type04_img02.png" alt="" /></div>
+                  </div>
+                  <div class="box_exam">
+                    <div class="list_pic txt">
+                      <div class="item"><a data-code="2" data-sound="../sound/has.mp3" class="dragItem" href="javascript:;"><span>has</span></a></div>
+                      <div class="item"><a data-code="3" data-sound="../sound/an apple.mp3"  class="dragItem" href="javascript:;"><span>an apple</span></a></div>
+                      <div class="item"><a data-code="1" data-sound="../sound/the alligator.mp3" class="dragItem" href="javascript:;"><span>The alligator</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_prev"></div>
+        <div class="btn_next"></div>
+      </div>
+      <!-- //content wrapper -->
+  	</div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+<!--this is a paid version script-->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/Draggable.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

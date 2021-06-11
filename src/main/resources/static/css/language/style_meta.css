@@ -1,0 +1,129 @@
+
+.wrap{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.bg-img img{
+    width: 100%;
+}
+
+
+.close{
+    position: absolute;
+    right: 6%;
+    top: 6%;
+    z-index: 99;
+    width: 6%;
+    height: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.day-list{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    padding: 0 12%;
+    z-index: 10;
+    text-align: center;
+}
+
+.day-list li{
+    float: left;
+    width: 19%;
+    position: relative;
+    margin: 0.3%;
+}
+
+.meta-title{
+    position: absolute;
+    top:3.5%;
+    left: 45%;
+    width: 30%;
+}
+
+.meta-title h1{
+    position: absolute;
+    top: 35%;
+    left: 71%;
+    width: 13%;
+}
+
+
+.meta-title h1.title1{
+    width: 9%;
+}
+
+.meta-title h1.title10{
+    width: 20%;
+}
+
+.mate-leftBox{
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    width: 12%;
+    text-align: center;
+}
+
+.mate-leftBox li{
+    margin-bottom: 7.5%;
+    width: 100%;
+    float: left;
+    font-size: 0;
+}
+
+.mate-leftBox li.ggg img{
+    width: 60%;
+}
+
+.mate-leftBox li a{
+    width: 19%;
+    display: inline-block;
+    margin: 0 2%;
+    padding: 0;
+    font-size: 0;
+}
+
+.mate-leftBox li a:after{
+    clear: both;
+}
+
+
+
+
+
+
+.meta-rightBox{
+    position: absolute;
+    top: 32%;
+    right: 5.5%;
+    width: 70%;
+    text-align: center;
+}
+
+.meta-rightBox li{
+    display: inline-block;
+    margin: 0.3%;
+    width: 14%;
+}
+
+.meta-rightBox ul li:first-child{
+    width: 10%;
+}
+
+
+
+li img{
+    width: 100%;
+}
+
+.meta-title img{
+    width: 100%;
+}

@@ -1,0 +1,130 @@
+
+.wrap{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+li img{
+    width: 100%;
+}
+/* .bg-img{
+    width: 100%;
+    height: 100vh;
+     background: url(../images/bg_main.jpg)no-repeat 0 0 /100% 100%; 
+    overflow: hidden;
+}
+
+.bg-img._sub1{
+    width: 100%;
+    height: 100vh;
+     background: url(../images/bg_sub.jpg)no-repeat 0 0 /100% 100%; 
+    overflow: hidden;
+} */
+
+ .bg-img img{
+    width: 100%;
+    height: auto;
+} 
+
+.day-list{
+    position: absolute;
+    top: 26%;
+    left: 0%;
+    padding: 0 12%;
+}
+
+
+.close{
+    position: absolute;
+    right: 6%;
+    top: 6%;
+    z-index: 99;
+    width: 6%;
+    height: auto;
+}
+
+.close img,
+.home img{
+    max-width: 100%;
+}
+
+.bubble-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 50%;
+    text-align: center;
+
+}
+
+.bubble-box li{
+    width: 19%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.bubble-box li img{
+    max-width: 100%;
+}
+
+.home{
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 6%;
+}
+
+
+.youtube{
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 5%;
+}
+
+.youtube img{
+    max-width: 100%;
+}
+
+.ab{
+    position: absolute;
+    top: 5.5%;
+    left: 15.3%;
+    width: 3%;
+
+}
+
+.ab img,
+.bubble-title img{
+    width: 100%;
+}
+
+.bubble-title{
+    position: absolute;
+    top: 6.5%;
+    left: 53.5%;
+    width: 6%;
+}
+
+.bubble-subbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    width: 100%;
+    text-align: center;
+}
+
+.bubble-subbox li{
+    display: inline-block;
+    width: 10%;
+    margin: 0 0.5%;
+}
+
+.bubble-subbox li a img{
+    max-width: 100%;
+    margin-top: 8%;
+}
+
