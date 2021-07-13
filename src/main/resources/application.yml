@@ -68,7 +68,7 @@ custom:
 spring:
   profiles: local
 server:
-  port: 8085
+  port: 8086
   servlet:
     context-path: /
     encoding:
@@ -84,7 +84,7 @@ server:
 spring:
   profiles: production
 server:
-  port: 30500
+  port: 8086
   servlet:
     context-path: /
     encoding:
