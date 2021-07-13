@@ -51,6 +51,7 @@ public class TrainingDynamicQuery {
                 .leftJoin(phonics).on(trainingMenu.MenuId.eq(phonics.trainingMenu.MenuId))
                 .leftJoin(dailyTalk).on(trainingMenu.MenuId.eq(dailyTalk.trainingMenu.MenuId))
                 .where(trainingMenu.ParentId.eq(menuId))
+                .orderBy(trainingMenu.MenuId.asc())
                 .fetch();
 
         return trainingHistResultDtos;
