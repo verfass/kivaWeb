@@ -54,6 +54,7 @@
         <div class="bubble-box">
             <ul>
                 <c:forEach var="SubMenu" items="${SubMenus}">
+<%--                    수정 부분--%>
                     <li><a href="/language/parent/${SubMenu.parentId}/menu/${SubMenu.menuId}/${type}/${SubMenu.menuName}"><img src="/images/language/bubble/${SubMenu.menuName}.png"></a></li>
                 </c:forEach>
             </ul>
