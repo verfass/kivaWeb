@@ -24,6 +24,7 @@ public class Templv2Application extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(Templv2Application.class);
     }
+
     public static void main(String[] args) {
         SpringApplication.run(Templv2Application.class, args);
     }
