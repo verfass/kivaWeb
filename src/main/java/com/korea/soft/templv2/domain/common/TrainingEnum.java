@@ -67,7 +67,7 @@ public enum TrainingEnum {
     TYPE_OA("https://training.metaedu-service.site/common/type_oa.mp3", "https://training.metaedu-service.site/common/type_oaoa.mp3", "OA", "oa"),
     TYPE_OW("https://training.metaedu-service.site/common/type_ow.mp3", "https://training.metaedu-service.site/common/type_owow.mp3", "OW", "ow"),
     TYPE_OO("https://training.metaedu-service.site/common/type_oo.mp3", "https://training.metaedu-service.site/common/type_oooo.mp3", "OO", "oo"),
-    TYPE_EE("https://training.metaedu-service.site/common/type_ee.mp3", "https://training.metaedu-service.site/common/type_eeee.mp3", "EE", "ee"),
+    TYPE_EE("https://training.metaedu-service.site/common/type_eee.mp3", "https://training.metaedu-service.site/common/type_eeee.mp3", "EE", "ee"),
     TYPE_EA("https://training.metaedu-service.site/common/type_ea.mp3", "https://training.metaedu-service.site/common/type_eaea.mp3", "EA", "ea"),
     TYPE_AR("https://training.metaedu-service.site/common/type_ar.mp3", "https://training.metaedu-service.site/common/type_arar.mp3", "AR", "ar"),
     TYPE_OR("https://training.metaedu-service.site/common/type_or.mp3", "https://training.metaedu-service.site/common/type_oror.mp3", "OR", "or"),
