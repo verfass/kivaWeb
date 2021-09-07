@@ -362,6 +362,7 @@
                                         <div class="item ball_orange"><a data-code="0" data-sound="${Phonics.errorCode3.lowerSound}" class="selectItem" href="javascript:;">${Phonics.errorCode3.lower}</a></div>
                                         <div class="item ball_orange"><a data-code="0" data-sound="${Phonics.errorCode3.lowerSound}" class="selectItem" href="javascript:;">${Phonics.errorCode3.lower}</a></div>
                                     </div>
+<%--                                    여기부터--%>
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound1}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage1}" alt=""/>
