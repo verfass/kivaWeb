@@ -366,9 +366,10 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound1}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage1}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText1}</p>
+                                            <p class="word01"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText1}</p>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -395,7 +396,7 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound2}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage2}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText2}</p>
+                                            <p class="word02"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText2}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -424,7 +425,7 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound3}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage3}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText3}</p>
+                                            <p class="word03"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText3}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -453,7 +454,7 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound4}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage4}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText4}</p>
+                                            <p class="word04"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText4}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -481,7 +482,7 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound1}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage1}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText1}</p>
+                                            <p class="word01"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText1}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -510,7 +511,7 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound2}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage2}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText2}</p>
+                                            <p class="word02"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText2}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -537,7 +538,7 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound3}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage3}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText3}</p>
+                                            <p class="word03"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText3}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -565,7 +566,7 @@
                                     <div class="balloon_card">
                                         <div class="card" data-sound="${Phonics.wordAnswerSound4}" data-repeat="2">
                                             <img src="${Phonics.wordAnswerImage4}" alt=""/>
-                                            <p><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText4}</p>
+                                            <p class="word04"><strong>${Phonics.answerCode.lower}</strong>${Phonics.wordAnswerAfterText4}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -759,6 +760,17 @@
                     break;
             }
         });
+
+        // 이중문자 처리
+        var answerCode = "<strong>${Phonics.answerCode.lower}</strong>";
+        var wordAnswerAfterText1 = "${Phonics.wordAnswerAfterText1}";
+        var wordAnswerAfterText2 = "${Phonics.wordAnswerAfterText2}";
+        var wordAnswerAfterText3 = "${Phonics.wordAnswerAfterText3}";
+        var wordAnswerAfterText4 = "${Phonics.wordAnswerAfterText4}";
+        $(".word01").html(wordAnswerAfterText1.replace("_", answerCode));
+        $(".word02").html(wordAnswerAfterText2.replace("_", answerCode));
+        $(".word03").html(wordAnswerAfterText3.replace("_", answerCode));
+        $(".word04").html(wordAnswerAfterText4.replace("_", answerCode));
 
     }
 
