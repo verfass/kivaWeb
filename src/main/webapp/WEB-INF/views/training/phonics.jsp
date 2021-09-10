@@ -762,15 +762,33 @@
         });
 
         // 이중문자 처리
-        var answerCode = "<strong>${Phonics.answerCode.lower}</strong>";
+        var answerCode = "${Phonics.answerCode.lower}";
         var wordAnswerAfterText1 = "${Phonics.wordAnswerAfterText1}";
         var wordAnswerAfterText2 = "${Phonics.wordAnswerAfterText2}";
         var wordAnswerAfterText3 = "${Phonics.wordAnswerAfterText3}";
         var wordAnswerAfterText4 = "${Phonics.wordAnswerAfterText4}";
-        $(".word01").html(wordAnswerAfterText1.replace("_", answerCode));
-        $(".word02").html(wordAnswerAfterText2.replace("_", answerCode));
-        $(".word03").html(wordAnswerAfterText3.replace("_", answerCode));
-        $(".word04").html(wordAnswerAfterText4.replace("_", answerCode));
+        var html1, html2, html3, html4;
+        var sep = "_";
+        var iSep = answerCode.indexOf(sep);
+        if (iSep != -1) {
+            // _분리문자 처리
+            arrCode = answerCode.split(sep);
+            html1 = wordAnswerAfterText1.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
+            html2 = wordAnswerAfterText2.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
+            html3 = wordAnswerAfterText3.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
+            html4 = wordAnswerAfterText4.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
+        } else {
+            // 일반문자 처리
+            html1 = wordAnswerAfterText1.replace(sep, "<strong>" + answerCode + "</strong>");
+            html2 = wordAnswerAfterText2.replace(sep, "<strong>" + answerCode + "</strong>");
+            html3 = wordAnswerAfterText3.replace(sep, "<strong>" + answerCode + "</strong>");
+            html4 = wordAnswerAfterText4.replace(sep, "<strong>" + answerCode + "</strong>");
+        }
+        $(".word01").html(html1);
+        $(".word02").html(html2);
+        $(".word03").html(html3);
+        $(".word04").html(html4);
+        // 이중문자 처리
 
     }
 

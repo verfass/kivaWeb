@@ -271,7 +271,8 @@ strong{font-weight:700;}
 .edu_templete .swiper-slide .quiz_wrap.type_balloon02 .box_exam .balloon_card .card {overflow:hidden;position:absolute;top:50%;left:0;z-index:1;width:100%;padding:30px 0;border:6px solid #ff808a;border-radius:35px;text-align:center;background:#fff;transform:translate(0,-50%);}
 .edu_templete .swiper-slide .quiz_wrap.type_balloon02 .box_exam .balloon_card .card img {max-width:100%;}
 .edu_templete .swiper-slide .quiz_wrap.type_balloon02 .box_exam .balloon_card .card p {font-size:8rem;line-height:1em;color:#000;}
-.edu_templete .swiper-slide .quiz_wrap.type_balloon02 .box_exam .balloon_card .card p strong {display:inline-block;width:80px;border-bottom:1px solid #000;text-align:center;color:transparent;}
+/*.edu_templete .swiper-slide .quiz_wrap.type_balloon02 .box_exam .balloon_card .card p strong {display:inline-block;width:80px;border-bottom:1px solid #000;text-align:center;color:transparent;}*/
+.edu_templete .swiper-slide .quiz_wrap.type_balloon02 .box_exam .balloon_card .card p strong {display:inline-block;border-bottom:1px solid #000;text-align:center;color:transparent;}
 .edu_templete .swiper-slide .quiz_wrap.type_balloon02 .box_exam .balloon_card .card.active p strong {color:#f00;transition:all 0.4s ease-out;-webkit-transition:all 0.4s ease-out;}
 .edu_templete .swiper-slide .quiz_wrap.type_candy .box_exam {padding:0;}
 .edu_templete .swiper-slide .quiz_wrap.type_candy .box_exam .list_balloon {float:right;position:relative;width:50%;height:100%;}
