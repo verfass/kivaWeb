@@ -53,7 +53,7 @@
                         앱다운로드
                     </a>
                 </li>
-                <sec:authorize access="isAuthenticated()">
+                <sec:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_MANAGER','ROLE_TEACHER','ROLE_KINDERGARTEN')">
                     <li class="${ptName == 'board' ? 'active' : ''}">
                         <a href='/boardGroup/2'>
                             게시판
@@ -152,13 +152,15 @@
                         앱다운로드
                     </a>
                 </li>
-                <sec:authorize access="isAuthenticated()">
+
+                <sec:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_MANAGER','ROLE_TEACHER','ROLE_KINDERGARTEN')">
                     <li class="">
                         <a href='/boardGroup/2'>
                             게시판
                         </a>
                     </li>
                 </sec:authorize>
+
                 <sec:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_MANAGER','ROLE_TEACHER','ROLE_KINDERGARTEN')">
                     <li class="">
                         <a href='/study' class="or-a">
@@ -169,7 +171,7 @@
                 <sec:authorize access="isAuthenticated()">
                     <li class="">
                         <a href='/menu/branch' class="or-a">
-                                ${principal.user.role.roleType.viewName}용
+                            ${principal.user.role.roleType.viewName}용
                         </a>
                     </li>
                 </sec:authorize>

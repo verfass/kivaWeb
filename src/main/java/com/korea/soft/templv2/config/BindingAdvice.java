@@ -1,7 +1,7 @@
 package com.korea.soft.templv2.config;
 
 import com.korea.soft.templv2.domain.common.CommonDto;
-import io.sentry.Sentry;
+//import io.sentry.Sentry;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -65,7 +65,7 @@ public class BindingAdvice {
 //                        errorMap.put(error.getField(), error.getDefaultMessage());
                         errorMsg = error.getDefaultMessage();
                         log.warn(type + "." + method + "() => 필드:" + error.getField() + ", 메시지:" + error.getDefaultMessage());
-                        Sentry.captureMessage(type + "." + method + "() => 필드:" + error.getField() + ", 메시지:" + error.getDefaultMessage());
+//                        Sentry.captureMessage(type + "." + method + "() => 필드:" + error.getField() + ", 메시지:" + error.getDefaultMessage());
                     }
                     return new CommonDto<>(HttpStatus.INTERNAL_SERVER_ERROR.value(), errorMsg);
                 }

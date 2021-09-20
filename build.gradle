@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.koreasoft'
-version = '0.6'
+version = '0.7'
 sourceCompatibility = '1.8'
 
 configurations {
@@ -30,7 +30,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-    implementation 'io.sentry:sentry-spring-boot-starter:4.0.0'
+//    implementation 'io.sentry:sentry-spring-boot-starter:4.0.0'
     implementation 'org.springframework.security:spring-security-taglibs'
     implementation 'javax.servlet:jstl'
     implementation 'junit:junit:4.12'

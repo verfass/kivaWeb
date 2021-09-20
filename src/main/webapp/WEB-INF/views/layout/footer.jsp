@@ -17,7 +17,7 @@
                     <a href="" class="gry-a">ESPT</a>
                     <a href="" class="gry-a">PBL스쿨</a>
                 </p>
-                <a href="" class="foo-alist">회사소개</a>
+                <a href="/auth/menu/1" class="foo-alist">회사소개</a>
                 <a href="" class="foo-alist">이용약관</a>
                 <a href="/auth/menu/9-3" class="foo-alist">개인정보취급방침</a>
                 <a href="" class="foo-alist">이용안내</a>

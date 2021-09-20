@@ -1,5 +1,5 @@
-sentry:
-  dsn: https://5efd780797564171a3b5aa4e0bfb31c1@o880741.ingest.sentry.io/5834682
+#sentry:
+#  dsn: https://5efd780797564171a3b5aa4e0bfb31c1@o880741.ingest.sentry.io/5834682
 
 spring:
   # 레디스 환경

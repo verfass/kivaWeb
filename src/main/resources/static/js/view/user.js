@@ -13,6 +13,8 @@ let apiObj = {
             console.log(resp);
             alert(resp.data);
             if (resp.statusCode === 200) {
+                alert("가입이 완료되었습니다.\n" +
+                    "원으로 승인 요청 해주세요");
                 location.href = "/";
             }
         }).fail(function (error) {
