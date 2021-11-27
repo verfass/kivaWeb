@@ -80,7 +80,6 @@ public enum TrainingEnum {
     TYPE_IR("https://training.metaedu-service.site/common/type_ir.mp3", "https://training.metaedu-service.site/common/type_irir.mp3", "IR", "ir"),
     TYPE_UR("https://training.metaedu-service.site/common/type_ur.mp3", "https://training.metaedu-service.site/common/type_urur.mp3", "UR", "ur");
 
-
     private final String upperSound;
     private final String lowerSound;
     private final String upper;
