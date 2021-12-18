@@ -20,8 +20,6 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 @EnableCaching
 public class Templv2Application extends SpringBootServletInitializer {
 
-//    https://metaedu.kr/
-
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(Templv2Application.class);
