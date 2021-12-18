@@ -770,19 +770,29 @@
         var html1, html2, html3, html4;
         var sep = "_";
         var iSep = answerCode.indexOf(sep);
-        if (iSep != -1) {
+        var sTag = "<strong>"
+        var eTag = "</strong>"
+        // sTag = ""
+        // eTag = ""
+        if (iSep > 0) {
             // _분리문자 처리
             arrCode = answerCode.split(sep);
-            html1 = wordAnswerAfterText1.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
-            html2 = wordAnswerAfterText2.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
-            html3 = wordAnswerAfterText3.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
-            html4 = wordAnswerAfterText4.replace(sep, "<strong>"+arrCode[0]+"</strong>").replace(sep, "<strong>"+arrCode[1]+"</strong>");
+            html1 = wordAnswerAfterText1.replace(sep, sTag + arrCode[0] + eTag).replace(sep, sTag + arrCode[1] + eTag);
+            html2 = wordAnswerAfterText2.replace(sep, sTag + arrCode[0] + eTag).replace(sep, sTag + arrCode[1] + eTag);
+            html3 = wordAnswerAfterText3.replace(sep, sTag + arrCode[0] + eTag).replace(sep, sTag + arrCode[1] + eTag);
+            html4 = wordAnswerAfterText4.replace(sep, sTag + arrCode[0] + eTag).replace(sep, sTag + arrCode[1] + eTag);
+        } else if (iSep == 0) {
+            arrCode = answerCode.split(sep);
+            html1 = wordAnswerAfterText1.replace(sep, sTag + arrCode[1] + eTag);
+            html2 = wordAnswerAfterText2.replace(sep, sTag + arrCode[1] + eTag);
+            html3 = wordAnswerAfterText3.replace(sep, sTag + arrCode[1] + eTag);
+            html4 = wordAnswerAfterText4.replace(sep, sTag + arrCode[1] + eTag);
         } else {
             // 일반문자 처리
-            html1 = wordAnswerAfterText1.replace(sep, "<strong>" + answerCode + "</strong>");
-            html2 = wordAnswerAfterText2.replace(sep, "<strong>" + answerCode + "</strong>");
-            html3 = wordAnswerAfterText3.replace(sep, "<strong>" + answerCode + "</strong>");
-            html4 = wordAnswerAfterText4.replace(sep, "<strong>" + answerCode + "</strong>");
+            html1 = wordAnswerAfterText1.replace(sep, sTag + answerCode + eTag);
+            html2 = wordAnswerAfterText2.replace(sep, sTag + answerCode + eTag);
+            html3 = wordAnswerAfterText3.replace(sep, sTag + answerCode + eTag);
+            html4 = wordAnswerAfterText4.replace(sep, sTag + answerCode + eTag);
         }
         $(".word01").html(html1);
         $(".word02").html(html2);
