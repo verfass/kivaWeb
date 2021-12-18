@@ -5,6 +5,7 @@
 
 buildscript {
     ext {
+        serviceName = "kivaWeb"
         ver = "1.1"
     }
 }
@@ -33,7 +34,7 @@ repositories {
 bootWar.enabled = false
 war.enabled = true
 war {
-    archiveName("kivaWeb-${ver}.war")
+    archiveName("${serviceName}-${ver}.war")
 }
 
 dependencies {
