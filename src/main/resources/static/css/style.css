@@ -1060,6 +1060,36 @@ input.search {
     border: 0;
 }
 
+
+.popupModal .modal-dialog {
+    max-width: 550px;
+    margin: 100px auto;
+}
+
+.popupModal button.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+.popupModal button.close:active {
+    border: none !important;
+}
+
+.popupModal .modal-content {
+    background: none;
+    border: 0;
+}
+
+
+
+
 .ma-box2Inlist {
     position: absolute;
     text-align: right;
@@ -1210,7 +1240,7 @@ body.study_romm {
     font-size: 0;
 }
 .room_body .btn_zon li {
-  width: 19%;
+    width: 19%;
     display: inline-block;
     margin-right: 3%;
     margin-bottom: 30px;
@@ -1220,7 +1250,7 @@ body.study_romm {
 }
 
 .room_body .btn_zon li img{
-  width: 100%;
+    width: 100%;
 }
 
 .btn_zon {
@@ -1912,6 +1942,11 @@ body.study_romm {
     .moviModal .modal-dialog {
         max-width: 90%;
     }
+
+    .popupModal .modal-dialog {
+        max-width: 550px;
+    }
+
 
     .bu-bg {
         padding: 100px 0;

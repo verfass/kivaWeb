@@ -67,6 +67,21 @@
     </div>
 </div>
 
+<div class="modal fade popupModal"
+     id="popupModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="basicModal"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="videoStop()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="/images/popup/popup_20220504_200809_1.jpg" width="500" class="img1">
+        </div>
+    </div>
+</div>
 
 <%@include file="./layout/footer.jsp" %>
 <script>
@@ -81,6 +96,8 @@
             slideWidth: 1920,
             pagerCustom : '#bx-pager' //썸네일
         });
+
+        $('#popupModal').modal('show');
 
     });
     function videoPlay() {
