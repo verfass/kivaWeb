@@ -19,7 +19,7 @@ plugins {
 
 group = 'com.koreasoft'
 version = '${ver}'
-sourceCompatibility = '1.8'
+sourceCompatibility = '1.8.2'
 
 configurations {
     compileOnly {

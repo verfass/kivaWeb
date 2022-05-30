@@ -50,11 +50,11 @@
     </div>
 </div>
 <div class="modal fade moviModal"
-        id="moviModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="basicModal"
-        aria-hidden="true">
+     id="moviModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="basicModal"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="videoStop()">
@@ -66,6 +66,24 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade popupModal"
+     id="popupModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="basicModal"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="videoStop()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="/images/popup/popup_20220504_200809_1.jpg" width="500" class="img1">
+        </div>
+    </div>
+</div>
+
 
 
 <%@include file="./layout/footer.jsp" %>
@@ -82,7 +100,9 @@
             pagerCustom : '#bx-pager' //썸네일
         });
 
+        $('#popupModal').modal('show');
     });
+
     function videoPlay() {
         $("#video1").get(0).play();
     }
@@ -90,6 +110,8 @@
     function videoStop() {
         $("#video1").get(0).pause();
     }
+
+
 </script>
 
 </html>

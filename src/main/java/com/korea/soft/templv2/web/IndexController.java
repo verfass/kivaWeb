@@ -41,6 +41,14 @@ public class IndexController {
     }
     //endregion
 
+    //region [정적 메뉴들] - auth
+    @GetMapping("/auth/download")
+    public String topMenu(Model model){
+        String ptName = "download";
+        model.addAttribute("ptName", ptName);
+        return "static/"+ptName;
+    }
+    //endregion
 
     //region [권한별 사용자 전용 분기 화면] - RoleType
     @GetMapping("/menu/branch")

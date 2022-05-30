@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href='http://down.metaedu-app.co.kr/' style="color: #1b75bb">
+                    <a href='/auth/download' style="color: #1b75bb">
                         앱다운로드
                     </a>
                 </li>
