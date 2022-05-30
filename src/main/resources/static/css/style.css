@@ -981,22 +981,6 @@ input.search {
     display: inline-block;
 }
 
-
-
-.downloadContentBox {
-    background:url("../images/download/download_back.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 941px;
-}
-
-downloadContentBoxBtn {
-    padding-top: 500px;
-}
-
-
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 400px;
@@ -1075,34 +1059,6 @@ downloadContentBoxBtn {
     background: none;
     border: 0;
 }
-
-.popupModal .modal-dialog {
-    max-width: 10%;
-    margin: 100px auto;
-}
-
-.popupModal button.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 2rem;
-    background: #fff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-}
-
-.popupModal button.close:active {
-    border: none !important;
-}
-
-.popupModal .modal-content {
-    background: none;
-    border: 0;
-}
-
-
 
 .ma-box2Inlist {
     position: absolute;
