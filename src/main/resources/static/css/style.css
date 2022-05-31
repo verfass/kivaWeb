@@ -1060,6 +1060,34 @@ input.search {
     border: 0;
 }
 
+
+.popupModal .modal-dialog {
+    max-width: 10%;
+    margin: 100px auto;
+}
+
+.popupModal button.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+.popupModal button.close:active {
+    border: none !important;
+}
+
+.popupModal .modal-content {
+    background: none;
+    border: 0;
+}
+
+
 .ma-box2Inlist {
     position: absolute;
     text-align: right;
@@ -1555,6 +1583,23 @@ body.study_romm {
     display: none;
 }
 
+.downloadContentBox {
+    background:url("../images/download/download_back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 941px;
+}
+
+.downloadContentBoxBtn {
+    /*padding-top: 500px;*/
+}
+
+
+
+
+
 @media screen and (max-width: 1440px) {
     .pc {
         display: block;
@@ -1913,6 +1958,10 @@ body.study_romm {
         max-width: 90%;
     }
 
+    .popupModal .modal-dialog {
+        max-width: 90%;
+    }
+
     .bu-bg {
         padding: 100px 0;
     }
@@ -2028,6 +2077,19 @@ body.study_romm {
         width: 100%;
         margin-top: 50px;
     }
+
+    .downloadContentBox {
+        background:url("../images/download/download_back.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+    }
+
+    .downloadContentBoxBtn {
+        /*padding-top: 500px;*/
+    }
+
 
     .sub-head .sub-ul .home,
     .sub-head .sub-ul .pp-li {
