@@ -8,22 +8,24 @@
 
         <div class="row downloadContentBoxBtn">
             <div class="col-6 col-md-3">
-                <a href="http://down.metaedu-app.co.kr/키바월드.apk" download>
+                <a href="https://down.metaedu-app.co.kr/키바월드.apk" download>
                     <img src="../images/download/download_btn_kiva.png" class="img-fluid">
                 </a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="http://down.metaedu-app.co.kr/Masha and the Bear.apk" download>
+                <a href="https://down.metaedu-app.co.kr/Masha and the Bear.apk" download>
                     <img src="../images/download/download_btn_masha.png" class="img-fluid">
                 </a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="http://down.metaedu-app.co.kr/메타키즈.apk" download>
+                <a href="https://down.metaedu-app.co.kr/메타키즈.apk" download>
                     <img src="../images/download/download_btn_meta.png" class="img-fluid">
                 </a>
             </div>
             <div class="col-6 col-md-3">
-                <img src="../images/download/download_btn_we.png" class="img-fluid">
+                <a href="https://down.metaedu-app.co.kr/welearn.apk" download>
+                    <img src="../images/download/download_btn_we.png" class="img-fluid">
+                </a>
             </div>
         </div>
 
