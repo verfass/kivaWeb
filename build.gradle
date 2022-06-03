@@ -6,7 +6,7 @@
 buildscript {
     ext {
         serviceName = "kivaWeb"
-        ver = "1.1"
+        ver = "1.2"
     }
 }
 
@@ -19,7 +19,7 @@ plugins {
 
 group = 'com.koreasoft'
 version = '${ver}'
-sourceCompatibility = '1.8.2'
+sourceCompatibility = '1.8'
 
 configurations {
     compileOnly {
